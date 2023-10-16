@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="en-US" data-scrapbook-source="https://injuredpunks.art/" data-scrapbook-create="20231016190735138"
+	data-scrapbook-title="Injured Punks – Choose Their Destiny">
+
+<head>
+	<script defer="defer" src="js/vendors.js"></script>
+	<script defer="defer" src="js/contracts.js"></script>
+	<script defer="defer" src="js/main.js"></script>
+  
+	<script>
+	  window.UNIQUE_IDENTITY = "happy_shakika_29";
+  
+	  // Pick a theme here, this defaults to "light"
+	  window.modal_theme = "light" || "dark";
+  
+	  // https://docs.walletconnect.com/web3modal/v2/html/wagmi/theming
+	  window.modal_variables = {
+		/* Example of what you can do */
+		// "--w3m-accent-color": "#FF00FF",
+		// "--w3m-background-color": "#FF00FF",
+		// "--w3m-logo-image-url": "/your-logo.svg",
+	  };
+  
+	  // Notification modals
+	  window.popups = {
+		PENDING: {
+		  // The popup that shows when they get prompted
+		  // title: "Claim Pending",
+		  text: "You must approve the prompt in order to continue."
+		},
+		INVALID: {
+		  // Shown when they connect on a wallet that is poor.
+		  // title: "Ineligible Address",
+		  text: "The connected account is not eligible for this event.\nPlease try using a different account.",
+		}
+	  }
+  
+	  // Only touch this if you know what you're doing!
+	  window.OVERRIDE_MODE = false;
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Creep Crew Genesis</title>
+	<meta name="robots" content="max-image-preview:large">
+	<noscript>
+		<style>
+			#preloader {
+				display: none;
+			}
+		</style>
+	</noscript>
+	<link rel="alternate" type="application/rss+xml" title="Injured Punks » Feed" href="https://injuredpunks.art/feed/">
+	<link rel="alternate" type="application/rss+xml" title="Injured Punks » Comments Feed"
+		href="https://injuredpunks.art/comments/feed/">
+
+	<style>
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="style.min.css" media="all">
+	<style id="wp-block-library-theme-inline-css">
+		.wp-block-audio figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-audio figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-audio {
+			margin: 0 0 1em
+		}
+
+		.wp-block-code {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: Menlo, Consolas, monaco, monospace;
+			padding: .8em 1em
+		}
+
+		.wp-block-embed figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-embed figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-embed {
+			margin: 0 0 1em
+		}
+
+		.blocks-gallery-caption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .blocks-gallery-caption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-image figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-image figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-image {
+			margin: 0 0 1em
+		}
+
+		.wp-block-pullquote {
+			border-bottom: 4px solid;
+			border-top: 4px solid;
+			color: currentColor;
+			margin-bottom: 1.75em
+		}
+
+		.wp-block-pullquote cite,
+		.wp-block-pullquote footer,
+		.wp-block-pullquote__citation {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			text-transform: uppercase
+		}
+
+		.wp-block-quote {
+			border-left: .25em solid;
+			margin: 0 0 1.75em;
+			padding-left: 1em
+		}
+
+		.wp-block-quote cite,
+		.wp-block-quote footer {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			position: relative
+		}
+
+		.wp-block-quote.has-text-align-right {
+			border-left: none;
+			border-right: .25em solid;
+			padding-left: 0;
+			padding-right: 1em
+		}
+
+		.wp-block-quote.has-text-align-center {
+			border: none;
+			padding-left: 0
+		}
+
+		.wp-block-quote.is-large,
+		.wp-block-quote.is-style-large,
+		.wp-block-quote.is-style-plain {
+			border: none
+		}
+
+		.wp-block-search .wp-block-search__label {
+			font-weight: 700
+		}
+
+		.wp-block-search__button {
+			border: 1px solid #ccc;
+			padding: .375em .625em
+		}
+
+		:where(.wp-block-group.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-separator.has-css-opacity {
+			opacity: .4
+		}
+
+		.wp-block-separator {
+			border: none;
+			border-bottom: 2px solid;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.wp-block-separator.has-alpha-channel-opacity {
+			opacity: 1
+		}
+
+		.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+			width: 100px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-dots) {
+			border-bottom: none;
+			height: 1px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: 2px
+		}
+
+		.wp-block-table {
+			margin: 0 0 1em
+		}
+
+		.wp-block-table td,
+		.wp-block-table th {
+			word-break: normal
+		}
+
+		.wp-block-table figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-table figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-video figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-video figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-video {
+			margin: 0 0 1em
+		}
+
+		.wp-block-template-part.has-background {
+			margin-bottom: 0;
+			margin-top: 0;
+			padding: 1.25em 2.375em
+		}
+	</style>
+	<style id="classic-theme-styles-inline-css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id="global-styles-inline-css">
+		body {
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--color--bithu-primary: #00ffa3;
+			--wp--preset--color--bithu-secondary: #5865F2;
+			--wp--preset--color--bithu-light: #ffffff;
+			--wp--preset--color--bithu-black: #000000;
+			--wp--preset--color--bithu-dark: #5a5a5a;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 12px;
+			--wp--preset--font-size--medium: 18px;
+			--wp--preset--font-size--large: 32px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--font-size--normal: 16px;
+			--wp--preset--font-size--huge: 48px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flow>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+
+		body .is-layout-flow>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0;
+		}
+
+		body .is-layout-flow>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		body .is-layout-constrained>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+
+		body .is-layout-constrained>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0;
+		}
+
+		body .is-layout-constrained>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+			max-width: var(--wp--style--global--content-size);
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		body .is-layout-constrained>.alignwide {
+			max-width: var(--wp--style--global--wide-size);
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		body .is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		body .is-layout-flex>* {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		body .is-layout-grid>* {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		.wp-block-navigation a:where(:not(.wp-element-button)) {
+			color: inherit;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		.wp-block-pullquote {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel="stylesheet" id="contact-form-7-css" href="styles.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-css" href="elementor-icons.min.css" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css" href="frontend-lite.min.css" media="all">
+	<link rel="stylesheet" id="swiper-css" href="swiper.min.css" media="all">
+	<link rel="stylesheet" id="elementor-post-8-css" href="post-8.css" media="all">
+	<link rel="stylesheet" id="elementor-post-344-css" href="post-344.css" media="all">
+	<link rel="stylesheet" id="bithu-gfonts-css" href="css.css" media="all">
+	<link rel="stylesheet" id="bootstrap-css" href="bootstrap.min.css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="fontawesome-min.css" media="all">
+	<link rel="stylesheet" id="ico-moon-fonts-css" href="ico-moon-fonts.css" media="all">
+	<link rel="stylesheet" id="carousel-css" href="owl.carousel.min.css" media="all">
+	<link rel="stylesheet" id="slick-css" href="slick.css" media="all">
+	<link rel="stylesheet" id="theme-default-css" href="owl.theme.default.min.css" media="all">
+	<link rel="stylesheet" id="eocjs-newsticker-css" href="eocjs-newsticker.css" media="all">
+	<link rel="stylesheet" id="animate-css" href="animate.css" media="all">
+	<link rel="stylesheet" id="bithu-style-css" href="style-1.css" media="all">
+	<style id="bithu-dynamic-inline-css">
+		.breadcrumbs-banner:before {
+			background-color: #000000
+		}
+
+		.breadcrumbs-banner:before {
+			opacity: 0.75
+		}
+
+		.breadcrumbs-banner {
+			padding-top: 170px;
+		}
+
+		.breadcrumbs-banner {
+			padding-bottom: 120px;
+		}
+
+		body {
+			font-family: 'Poppins', sans-serif;
+			font-size: 16px;
+			line-height: 28px;
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		nav.template-main-menu>ul li a {
+			font-family: 'Poppins', sans-serif !important;
+			font-size: 16px !important;
+			line-height: 28px !important;
+			font-weight: normal !important;
+			font-style: normal;
+		}
+
+		nav.template-main-menu>ul>li ul.children li a,
+		nav.template-main-menu>ul>li ul.sub-menu li a {
+			font-family: 'Poppins', sans-serif !important;
+			font-size: 16px !important;
+			line-height: 26px !important;
+			font-weight: normal !important;
+			font-style: normal;
+		}
+
+		.elementor-counter .elementor-counter-number-wrapper,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Jolly Lodger', sans-serif !important;
+			font-weight: normal;
+		}
+
+		h1 {
+			font-family: 'Poppins', sans-serif !important;
+			font-weight: normal;
+		}
+
+		h1 {
+			font-size: 46px;
+			line-height: 46px;
+			font-style: normal;
+		}
+
+		@media (max-width: 767px) {
+			h1 {
+				font-size: 42px;
+				line-height: 56px;
+			}
+		}
+
+		h2 {
+			font-family: 'Poppins', sans-serif !important;
+			font-weight: normal;
+		}
+
+		h2 {
+			font-size: 36px;
+			line-height: 42px;
+			font-style: normal;
+		}
+
+		@media (max-width: 767px) {
+			h2 {
+				font-size: 34px;
+				line-height: 46px;
+			}
+		}
+
+		h3 {
+			font-family: 'Poppins', sans-serif !important;
+			font-weight: normal;
+		}
+
+		h3 {
+			font-size: 28px;
+			line-height: 36px;
+			font-style: normal;
+		}
+
+		@media (max-width: 767px) {
+			h3 {
+				font-size: 26px;
+				line-height: 34px;
+			}
+		}
+
+		h4 {
+			font-family: 'Poppins', sans-serif !important;
+			font-weight: normal;
+		}
+
+		h4 {
+			font-size: 22px;
+			line-height: 32px;
+			font-style: normal;
+		}
+
+		@media (max-width: 767px) {
+			h4 {
+				font-size: 22px;
+				line-height: 30px;
+			}
+		}
+
+		h5 {
+			font-family: 'Poppins', sans-serif !important;
+			font-weight: normal;
+		}
+
+		h5 {
+			font-size: 18px;
+			line-height: 26px;
+			font-style: normal;
+		}
+
+		h6 {
+			font-family: 'Poppins', sans-serif !important;
+			font-weight: normal;
+		}
+
+		@media (max-width: 575px) {
+			h5 {
+				font-size: 18px;
+			}
+		}
+
+		h6 {
+			font-size: 14px;
+			line-height: 24px;
+			font-style: normal;
+		}
+
+		:root {
+			--uigigs-body-font: Poppins;
+			--uigigs-menu-font: Jolly Lodger;
+			--uigigs-heading-font: Jolly Lodger;
+		}
+
+		nav.template-main-menu>ul>li>a {
+			color: #ffffff;
+		}
+
+		nav.template-main-menu>ul>li>a:hover {
+			color: #ffffff;
+		}
+
+		nav.template-main-menu>ul.main-menu>li>ul.sub-menu>li>ul.sub-menu,
+		nav.template-main-menu>ul.main-menu>li>ul.sub-menu {
+			background-color: #171F25;
+		}
+
+		nav.template-main-menu>ul.main-menu>li>ul.sub-menu>li>ul.sub-menu>li>a,
+		nav.template-main-menu>ul.main-menu>li>ul.sub-menu>li>a {
+			color: rgba(255, 255, 255, 0.8);
+		}
+
+		nav.template-main-menu>ul.main-menu>li>ul.sub-menu>li>ul.sub-menu>li.active>a,
+		nav.template-main-menu>ul.main-menu>li>ul.sub-menu>li>ul.sub-menu>li:hover>a,
+		nav.template-main-menu>ul.main-menu>li>ul.sub-menu>li:hover>a {
+			color: #ffffff;
+		}
+
+		nav.template-main-menu>ul.main-menu>li>ul.sub-menu>li>ul.sub-menu>li>a:before,
+		nav.template-main-menu>ul.main-menu>li>ul.sub-menu>li>a:before {
+			background-color: #ffffff;
+		}
+
+		.header1.sticky-on.sticky-header .navbar-wrap .header-menu {
+			background-color: rgba(27, 34, 38, 0.8);
+		}
+
+		.sticky-on.sticky-header nav.template-main-menu>ul.main-menu>li>a {
+			color: #ffffff;
+		}
+
+		.footer1.shape:before,
+		.footer1.shape:after {
+			display: none;
+		}
+
+		.header-logo a {
+			width: 200px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			.header-logo a {
+				width: 150px;
+			}
+		}
+
+		@media (max-width: 400px) {
+			.header-logo a {
+				width: 110px;
+			}
+
+			.sticky-on.sticky-header .header-logo a {
+				width: 110px;
+			}
+		}
+
+		:root {
+			--uigigs-body-color: rgba(255, 255, 255, 0.8);
+			--uigigs-heading-color: #ffffff;
+			--uigigs-primary-color: #00ffa3;
+			--uigigs-secondary-color: #5865F2;
+		}
+	</style>
+	<link rel="stylesheet" id="bithu-core-css" href="bithu-core.css" media="all">
+	<link rel="stylesheet" id="bithu-child-css" href="style.css" media="all">
+	<link rel="stylesheet" id="google-fonts-1-css" href="css-1.css" media="all">
+	<style type="text/css" id="operaUserStyle"></style>
+
+	<link rel="https://api.w.org/" href="https://injuredpunks.art/wp-json/">
+	<link rel="alternate" type="application/json" href="https://injuredpunks.art/wp-json/wp/v2/pages/344">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://injuredpunks.art/xmlrpc.php?rsd">
+	<meta name="generator" content="WordPress 6.3.2">
+	<link rel="canonical" href="https://injuredpunks.art/">
+	<link rel="shortlink" href="https://injuredpunks.art/">
+	<link rel="alternate" type="application/json+oembed"
+		href="https://injuredpunks.art/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finjuredpunks.art%2F">
+	<link rel="alternate" type="text/xml+oembed"
+		href="https://injuredpunks.art/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finjuredpunks.art%2F&amp;format=xml">
+	<meta name="generator"
+		content="Elementor 3.16.5; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+	<link rel="icon" href="favico3-150x150.png" sizes="32x32">
+	<link rel="icon" href="favico3-300x300.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="https://injuredpunks.art/wp-content/uploads/2023/07/favico3-300x300.png">
+	<meta name="msapplication-TileImage"
+		content="https://injuredpunks.art/wp-content/uploads/2023/07/favico3-300x300.png">
+	<style id="wp-custom-css">
+		.site-title a {
+			font-size: 40px;
+		}
+
+		.site-description {
+			font-weight: bold;
+			font-size: 16px;
+		}
+	</style>
+	<style type="text/css">
+		:root [href^="//x4pollyxxpush.com/"],
+		:root zeus-ad,
+		:root topadblock,
+		:root span[id^="ezoic-pub-ad-placeholder-"],
+		:root guj-ad,
+		:root gpt-ad,
+		:root div[id^="zergnet-widget"],
+		:root div[id^="vuukle-ad-"],
+		:root div[id^="sticky_ad_"],
+		:root div[id^="rc-widget-"],
+		:root div[id^="optidigital-adslot"],
+		:root div[id^="gpt_ad_"],
+		:root div[id^="ezoic-pub-ad-"],
+		:root div[id^="div-gpt-"],
+		:root div[id^="dfp-ad-"],
+		:root div[id^="advads_ad_"],
+		:root div[id^="adspot-"],
+		:root div[id^="ads300_250-widget-"],
+		:root div[id^="ads300_100-widget-"],
+		:root div[id^="ads250_250-widget-"],
+		:root div[id^="adrotate_widgets-"],
+		:root div[id^="_vdo_ads_player_ai_"],
+		:root div[id*="ScriptRoot"],
+		:root div[id*="MarketGid"],
+		:root div[data-native_ad],
+		:root div[data-mini-ad-unit],
+		:root div[data-insertion],
+		:root div[data-id-advertdfpconf],
+		:root div[data-google-query-id],
+		:root hl-adsense,
+		:root div[data-contentexchange-widget],
+		:root div[data-content="Advertisement"],
+		:root div[data-alias="300x250 Ad 2"],
+		:root div[data-alias="300x250 Ad 1"],
+		:root div[data-adzone],
+		:root div[data-adunit-path],
+		:root div[data-ad-wrapper],
+		:root div[data-ad-placeholder],
+		:root div[class^="native-ad-"],
+		:root div[data-dfp-id],
+		:root div[class^="kiwi-ad-wrapper"],
+		:root div[class^="Adstyled__AdWrapper-"],
+		:root div[aria-label="Ads"],
+		:root display-ads,
+		:root display-ad-component,
+		:root bottomadblock,
+		:root atf-ad-slot,
+		:root aside[id^="adrotate_widgets-"],
+		:root article.ad,
+		:root ark-top-ad,
+		:root app-advertisement,
+		:root app-ad,
+		:root amp-fx-flying-carpet,
+		:root amp-embed[type="taboola"],
+		:root amp-connatix-player,
+		:root amp-ad-custom,
+		:root amp-ad,
+		:root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"],
+		:root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"]+.ob_source,
+		:root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"]+.ob_source,
+		:root a[href^="https://yogacomplyfuel.com/"],
+		:root a[href^="https://www.sugarinstant.com/?partner_id="],
+		:root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"],
+		:root a[href^="https://www.privateinternetaccess.com/"]>img,
+		:root a[href^="https://www.onlineusershielder.com/"],
+		:root a[href^="https://www.nutaku.net/signup/landing/"],
+		:root a[href^="https://www.nudeidols.com/cams/"],
+		:root a[href^="https://www.mypornstarcams.com/landing/click/"],
+		:root a[href^="https://www.kingsoffetish.com/tour?partner_id="],
+		:root a[href^="https://www.infowarsstore.com/"]>img,
+		:root a[href^="https://www.highcpmrevenuenetwork.com/"],
+		:root a[href^="https://www.googleadservices.com/pagead/aclk?"],
+		:root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="],
+		:root a[href^="https://www.get-express-vpn.com/offer/"],
+		:root a[href^="https://www.financeads.net/tc.php?"],
+		:root a[href^="https://www.brazzersnetwork.com/landing/"],
+		:root div[class^="Display_displayAd"],
+		:root a[href^="https://www.sheetmusicplus.com/?aff_id="],
+		:root a[href^="https://www.bang.com/?aff="],
+		:root a[href^="https://www.adxsrve.com/"],
+		:root a[href^="https://www.5mno3.com/"],
+		:root a[href^="https://wirewar.website/"],
+		:root a[href^="https://visit-website.com/"],
+		:root a[href^="https://twinrdsyn.com/"],
+		:root a[href^="https://twinrdsrv.com/"],
+		:root a[href^="https://tsartech.g2afse.com/"],
+		:root a[href^="https://trk.sportsflix4k.club/"],
+		:root a[href^="https://trk.nfl-online-streams.club/"],
+		:root a[href^="https://traffdaq.com/"],
+		:root a[href^="https://tracking.avapartner.com/"],
+		:root a[href^="https://track.wg-aff.com"],
+		:root a[href^="https://track.afcpatrk.com/"],
+		:root a[href^="https://torguard.net/aff.php"]>img,
+		:root .OUTBRAIN[data-widget-id^="FMS_REELD_"],
+		:root [data-role="tile-ads-module"],
+		:root a[href^="https://adsrv4k.com/"],
+		:root a[href^="https://go.xlviirdr.com"],
+		:root a[href^="https://thaudray.com/"],
+		:root a[href^="https://taghaugh.com/"],
+		:root a[href^="https://click.candyoffers.com/"],
+		:root [href^="https://zstacklife.com/"] img,
+		:root a[href^="https://t.aslnk.link/"],
+		:root a[href^="https://t.adating.link/"],
+		:root a[href^="https://go.trackitalltheway.com/"],
+		:root [href^="https://track.fiverr.com/visit/"]>img,
+		:root a[href^="https://syndication.exoclick.com/"],
+		:root a[href^="https://syndication.dynsrvtbg.com/"],
+		:root a[href^="https://streamate.com/landing/click/"],
+		:root a[href^="https://ad.doubleclick.net/"],
+		:root a[href^="https://static.fleshlight.com/images/banners/"],
+		:root a[href^="https://sTaRtGAMing.net/tienda/"],
+		:root citrus-ad-wrapper,
+		:root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"],
+		:root a[href^="https://sTaRTgamInG.net/tienda/"],
+		:root [data-adblockkey],
+		:root a[href^="https://sTARtgamIng.net/tienda/"],
+		:root a[href^="https://aweptjmp.com/"],
+		:root a[href^="https://s.zlinkc.com/"],
+		:root a[href^="https://www.mrskin.com/account/"],
+		:root a[href^="https://s.optzsrv.com/"],
+		:root a[data-obtrack^="http://paid.outbrain.com/network/redir?"],
+		:root a[href^="https://reinstandpointdumbest.com/"],
+		:root a[href^="https://go.strpjmp.com/"],
+		:root a[href^="https://refpa4903566.top/"],
+		:root a[href^="https://pubads.g.doubleclick.net/"],
+		:root a[href^="https://prf.hn/click/"][href*="/camref:"]>img,
+		:root a[href^="https://serve.awmdelivery.com/"],
+		:root a[href^="https://prf.hn/click/"][href*="/adref:"]>img,
+		:root a[href^="https://pb-track.com/"],
+		:root a[href^="https://paid.outbrain.com/network/redir?"],
+		:root ps-connatix-module,
+		:root div[id^="ad_position_"],
+		:root a[href^="https://ovb.im/"],
+		:root div[id^="ad-div-"],
+		:root a[href^="https://newbinotracs.com/"],
+		:root a[href^="https://natour.naughtyamerica.com/track/"],
+		:root [href^="https://stvkr.com/"],
+		:root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"],
+		:root a[href^="https://loboclick.com"],
+		:root .nya-slot[style],
+		:root a[href^="https://a.bestcontentweb.top/"],
+		:root a[href^="https://lobimax.com/"],
+		:root a[href^="https://lead1.pl/"],
+		:root a[href^="https://refpa.top/"],
+		:root a[href^="https://landing.brazzersnetwork.com/"],
+		:root a[href^="https://safesurfingtoday.com/"][href*="?skip="],
+		:root a[href^="https://ads.leovegas.com/redirect.aspx?"],
+		:root a[href^="https://land.brazzersnetwork.com/landing/"],
+		:root a[href^="https://track.adform.net/"],
+		:root [data-css-class="dfp-inarticle"],
+		:root .card-captioned.crd>.crd--cnt>.s2nPlayer,
+		:root a[href^="https://go.tmrjmp.com"],
+		:root a[href^="https://startgamIng.Net/tienda/"],
+		:root a[href^="https://l.hyenadata.com/"],
+		:root a[href^="https://juicyads.in/"],
+		:root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"],
+		:root a[href^="https://join.dreamsexworld.com/"],
+		:root a[href^="https://itubego.com/video-downloader/?affid="],
+		:root a[href^="https://iqbroker.com/"][href*="?aff="],
+		:root a[href^="https://incisivetrk.cvtr.io/click?"],
+		:root [href^="https://www.herbanomic.com/"]>img,
+		:root a[href^="https://maymooth-stopic.com/"],
+		:root div[data-ad-targeting],
+		:root a[href^="https://hotplaystime.life/"],
+		:root a[href^="https://hot-growngames.life/"],
+		:root [data-revive-zoneid],
+		:root a[href^="https://googleads.g.doubleclick.net/pcs/click"],
+		:root a[href^="https://clk.wrenchsound.store/"],
+		:root a[href^="https://go.zybrdr.com"],
+		:root [href^="http://join.michelle-austin.com/"],
+		:root [class^="tile-picker__CitrusBannerContainer-sc-"],
+		:root a[href^="https://go.xxxiijmp.com"],
+		:root a[href^="https://go.xtbaffiliates.com/"],
+		:root a[href^="https://ismlks.com/"],
+		:root a[href^="//a.bestcontentfare.top/"],
+		:root [href^="https://www.mypillow.com/"]>img,
+		:root a[href^="https://azpresearch.club/"],
+		:root a[href^="https://go.xlirdr.com"],
+		:root a[href^="https://go.skinstrip.net"][href*="?campaignId="],
+		:root a[href^="https://go.markets.com/visit/?bta="],
+		:root a[href^="https://billing.purevpn.com/aff.php"]>img,
+		:root a[href^="https://go.hpyrdr.com/"],
+		:root a[href^="https://go.goaserv.com/"],
+		:root a[href^="https://go.dmzjmp.com"],
+		:root a[href^="https://go.admjmp.com/"],
+		:root [href^="https://kingered-banctours.com/"],
+		:root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="]>img,
+		:root a-ad,
+		:root a[href^="https://affiliate.rusvpn.com/click.php?"],
+		:root a[href^="https://geniusdexchange.com/"],
+		:root a[href^="https://frameworkdeserve.com/"],
+		:root a[href^="https://flirtandsweets.life/"],
+		:root a[href^="https://www.mrskin.com/tour"],
+		:root a[href^="https://financeads.net/tc.php?"],
+		:root div[data-native-ad],
+		:root a[href^="https://engine.trackingdesks.com/"],
+		:root a[data-redirect^="https://paid.outbrain.com/network/redir?"],
+		:root [href^="https://www.reimageplus.com/"],
+		:root a[href^="https://engine.phn.doublepimp.com/"],
+		:root a[href^="https://engine.blueistheneworanges.com/"],
+		:root a[href^="https://dl-protect.net/"],
+		:root [href="//jjgirls.com/sex/ChaturbateCams"],
+		:root a[href^="https://datingoffers30.info/"],
+		:root a[href^="https://clixtrac.com/"],
+		:root a[href^="https://click.linksynergy.com/fs-bin/"]>img,
+		:root ad-shield-ads,
+		:root a[href^="https://sTartGAMinG.net/tienda/"],
+		:root AD-TRIPLE-BOX,
+		:root a[href^="https://click.hoolig.app/"],
+		:root a[href^="https://track.totalav.com/"],
+		:root img[src^="https://images.purevpnaffiliates.com"],
+		:root a[href^="https://porntubemate.com/"],
+		:root a[href^="http://www.gfrevenge.com/landing/"],
+		:root a[href^="https://clickadilla.com/"],
+		:root a[href^="https://click.dtiserv2.com/"],
+		:root a[href^="https://go.xlvirdr.com"],
+		:root a[href^="http://www.iyalc.com/"],
+		:root a[href^="https://claring-loccelkin.com/"],
+		:root [class^="s2nPlayer"],
+		:root a[href^="https://chaturbate.jjgirls.com/?track="],
+		:root a[href^="https://chaturbate.com/in/?track="],
+		:root a[href^="https://chaturbate.com/in/?tour="],
+		:root a[href^="https://cams.imagetwist.com/in/?track="],
+		:root a[href^="https://go.gldrdr.com/"],
+		:root a[href^="https://buqkrzbrucz.com/"],
+		:root a[href^="https://affcpatrk.com/"],
+		:root a[href^="https://bongacams2.com/track?"],
+		:root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="],
+		:root a[href^="https://bngpt.com/"],
+		:root a[href^="https://bluedelivery.pro/"],
+		:root a[href^="https://black77854.com/"],
+		:root a[href^="https://bc.game/"],
+		:root a[href^="https://ndt5.net/"],
+		:root a[href^="https://batheunits.com/"],
+		:root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"],
+		:root a[href^="https://banners.livepartners.com/"],
+		:root a[href^="//whulsaux.com/"],
+		:root a[href^="https://m.do.co/c/"]>img,
+		:root [href="https://masstortfinancing.com"] img,
+		:root a[href^="https://bongacams10.com/track?"],
+		:root a[href^="https://albionsoftwares.com/"],
+		:root a[href^="https://t.hrtye.com/"],
+		:root a[href^="https://go.etoro.com/"]>img,
+		:root a[href^="https://convertmb.com/"],
+		:root a[href^="https://join.sexworld3d.com/track/"],
+		:root a[href^="https://intenseaffiliates.com/redirect/"],
+		:root a[href^="https://ads.ad4game.com/"],
+		:root [id^="google_ads_iframe"],
+		:root a[href^="https://syndication.optimizesrv.com/"],
+		:root a[href^="https://affpa.top/"],
+		:root a[href^="https://adnetwrk.com/"],
+		:root a[href^="https://adjoincomprise.com/"],
+		:root [href^="http://misslinkvocation.com/"],
+		:root a[href^="https://adclick.g.doubleclick.net/"],
+		:root a[href^="https://www.bet365.com/"][href*="affiliate="],
+		:root [href^="https://r.kraken.com/"],
+		:root a[href^="https://mmwebhandler.aff-online.com/"],
+		:root a[href^="https://go.nordvpn.net/aff"]>img,
+		:root [href^="http://clicks.totemcash.com/"],
+		:root a[href^="https://misspkl.com/"],
+		:root a[href^="https://ad.zanox.com/ppc/"]>img,
+		:root a[href^="https://ad.kubiccomps.icu/"],
+		:root div[data-adname],
+		:root a[href^="https://thechleads.pro/"],
+		:root a[href^="https://ab.advertiserurl.com/aff/"],
+		:root a[href^="https://a2.adform.net/"],
+		:root a[href^="https://iactrivago.ampxdirect.com/"],
+		:root a[href^="https://a.medfoodhome.com/"],
+		:root a[href^="https://adultfriendfinder.com/go/"],
+		:root a[href^="https://a.bestcontentoperation.top/"],
+		:root a[href^="http://static.fleshlight.com/images/banners/"],
+		:root a[href^="https://a.adtng.com/"],
+		:root [data-m-ad-id],
+		:root a[href^="https://sTartgAminG.net/tienda/"],
+		:root a[href^="https://a-ads.com/"],
+		:root a[href^="https://join.virtualtaboo.com/track/"],
+		:root a[href^="https://StarTGAminG.net/tienda/"],
+		:root a[href^="https://STaRTgamINg.net/tienda/"],
+		:root a[href^="https://cpmspace.com/"],
+		:root [href^="https://freecourseweb.com/"]>.sitefriend,
+		:root a[href^="https://prf.hn/click/"][href*="/creativeref:"]>img,
+		:root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="],
+		:root a[href^="https://1betandgonow.com/"],
+		:root [href="https://ourgoldguy.com/contact/"] img,
+		:root a[href^="https://brightadnetwork.com/"],
+		:root [href^="https://www.avantlink.com/click.php"] img,
+		:root a[href^="http://www.onwebcam.com/random?t_link="],
+		:root a[href^="http://www.mrskin.com/tour"],
+		:root a[href^="https://agacelebir.com/"],
+		:root a[href^="https://spygasm.com/track?"],
+		:root ins.adsbygoogle,
+		:root a[href^="https://1startfiledownload1.com/"],
+		:root a[href^="https://s.zlinkb.com/"],
+		:root a[href^="http://d2.zedo.com/"],
+		:root a[href^="http://www.friendlyduck.com/AF_"],
+		:root a[href^="http://trk.globwo.online/"],
+		:root a[href^="http://traffic.tc-clicks.com/"],
+		:root a[href^="http://tour.mrskin.com/"],
+		:root a[href^="https://funkydaters.com/"],
+		:root [id^="ad_sky"],
+		:root a[href^="http://https://www.get-express-vpn.com/offer/"],
+		:root div[id^="google_dfp_"],
+		:root a[href^="http://googleads.g.doubleclick.net/pcs/click"],
+		:root [href^="http://go.cm-trk2.com/"],
+		:root a[href^="http://click.payserve.com/"],
+		:root a[href^="https://porngames.adult/?SID="],
+		:root a[href^="https://landing1.brazzersnetwork.com"],
+		:root #slashboxes>.deals-rail,
+		:root [href^="http://globsads.com/"],
+		:root [href^="https://www.brighteonstore.com/products/"] img,
+		:root a[href^="http://bc.vc/?r="],
+		:root a[href^="https://mityneedn.com/"],
+		:root [href^="http://homemoviestube.com/"],
+		:root a[href^="http://ad.doubleclick.net/"],
+		:root a[href^="//zunsoach.com/"],
+		:root a[href^="//pubads.g.doubleclick.net/"],
+		:root a[href^="https://femglobal.app/"],
+		:root a[href^="//go.eabids.com/"],
+		:root a[data-url^="http://paid.outbrain.com/network/redir?"]+.author,
+		:root [href^="https://join.playboyplus.com/track/"],
+		:root a[href^="//ardslediana.com/"],
+		:root [data-d-ad-id],
+		:root a[href*=".engine.adglare.net/"],
+		:root [href^="https://awbbjmp.com/"],
+		:root a[href^="https://tracker.loropartners.com/"],
+		:root #kt_player>a[target="_blank"],
+		:root a[href*=".cfm?fp="][href*="&maxads="],
+		:root [data-ad-width],
+		:root a[href^="http://bodelen.com/"],
+		:root a[data-oburl^="https://paid.outbrain.com/network/redir?"],
+		:root [href^="https://cpa.10kfreesilver.com/"],
+		:root a[href^="https://a.bestcontentfood.top/"],
+		:root a[href^="http://wct.link/"],
+		:root [href^="https://goldforyourfuture.com/clk.trk"] img,
+		:root [onclick^="location.href='http://www.reimageplus.com"],
+		:root [id^="section-ad-banner"],
+		:root a[href^="https://go.julrdr.com/"],
+		:root .trc_rbox_div .syndicatedItemUB,
+		:root [href^="https://zone.gotrackier.com/"],
+		:root [href^="https://detachedbates.com/"],
+		:root [href^="https://www.targetingpartner.com/"],
+		:root a[href^="https://fourwhenstatistics.com/"],
+		:root [href^="https://www.restoro.com/"],
+		:root a[href^="https://yourperfectdating.life/"],
+		:root a[href^="https://join.virtuallust3d.com/"],
+		:root .section-subheader>.section-hotel-prices-header,
+		:root [href^="https://go.affiliatexe.com/"],
+		:root [href^="https://www.hostg.xyz/"]>img,
+		:root [href^="https://ilovemyfreedoms.com/landing-"],
+		:root a[href^="https://staRTgaming.net/tienda/"],
+		:root a[href^="https://STaRtgAmInG.net/tienda/"],
+		:root a[href^="http://adultfriendfinder.com/go/"],
+		:root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="],
+		:root a[href^="https://tour.mrskin.com/"],
+		:root div[id^="ad-position-"],
+		:root a[href^="http://affiliate.glbtracker.com/"],
+		:root a[href^="https://leg.xyz/?track="],
+		:root div[id^="crt-"][style],
+		:root a[href^="http://adultgames.xxx/"],
+		:root [href^="https://shiftnetwork.infusionsoft.com/go/"]>img,
+		:root a[href^="https://trk.softonixs.xyz/"],
+		:root [href^="https://www.mypatriotsupply.com/"]>img,
+		:root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"],
+		:root [href^="https://secure.bmtmicro.com/servlets/"],
+		:root a[href^="https://losingoldfry.com/"],
+		:root .scroll-fixable.rail-right>.deals-rail,
+		:root [href^="https://routewebtk.com/"],
+		:root a[href^="https://oackoubs.com/"],
+		:root a[href^="https://ak.psaltauw.net/"],
+		:root a[href^="https://go.cmtaffiliates.com/"],
+		:root [data-name="adaptiveConstructorAd"],
+		:root [href^="https://optimizedelite.com/"]>img,
+		:root a[href^="https://awptjmp.com/"],
+		:root a[href^="https://go.goasrv.com/"],
+		:root [href^="http://mypillow.com/"]>img,
+		:root a[href^="http://bongacams.com/track?"],
+		:root a[href^="https://fleshlight.sjv.io/"],
+		:root [data-ad-manager-id],
+		:root a[href^="https://promo-bc.com/"],
+		:root a[href^="https://clicks.pipaffiliates.com/"],
+		:root [href^="https://noqreport.com/"]>img,
+		:root a[href^="https://www.highperformancecpmgate.com/"],
+		:root a[href^="https://t.grtyi.com/"],
+		:root [href^="https://mylead.global/stl/"]>img,
+		:root [href^="https://mypatriotsupply.com/"]>img,
+		:root [data-freestar-ad],
+		:root a[href^="https://fc.lc/ref/"],
+		:root .vid-present>.van_vid_carousel__padding,
+		:root span[data-ez-ph-id],
+		:root [href^="https://track.aftrk1.com/"],
+		:root div[id^="adngin-"],
+		:root [data-rc-widget],
+		:root a[href^="https://go.xxxijmp.com"],
+		:root [href^="https://istlnkcl.com/"],
+		:root [href^="https://go.xlrdr.com"],
+		:root [href^="https://go.4rabettraff.com/"],
+		:root a[href^="https://tm-offers.gamingadult.com/"],
+		:root [href^="https://charmingdatings.life/"],
+		:root [href^="https://glersakr.com/"],
+		:root .trc_rbox_border_elm .syndicatedItem,
+		:root div[id^="pa_sticky_ad_box_middle_"],
+		:root a[href^="http://www.onclickmega.com/jump/next.php?"],
+		:root a[href^="https://italarizege.xyz/"],
+		:root a[href^="https://wittered-mainging.com/"],
+		:root [href^="https://engine.gettopple.com/"],
+		:root [data-id^="div-gpt-ad"],
+		:root a[href^="https://k2s.cc/pr/"],
+		:root [href^="https://affect3dnetwork.com/track/"],
+		:root a[href^="https://camfapr.com/landing/click/"],
+		:root [href="//sexcams.plus/"],
+		:root a[href^="https://go.currency.com/"],
+		:root .resultsList>div>div>div.G-5c[role="tab"][tabindex="0"],
+		:root [href^="http://www.mypillow.com/"]>img,
+		:root div[id^="div-ads-"],
+		:root [href^="https://rapidgator.net/article/premium/ref/"],
+		:root [href^="https://join3.bannedsextapes.com"],
+		:root div[data-spotim-slot],
+		:root [href^="https://antiagingbed.com/discount/"]>img,
+		:root a[href^="https://go.247traffic.com/"],
+		:root [href^="https://join.girlsoutwest.com/"],
+		:root [href^="http://trafficare.net/"],
+		:root a[href^="https://tc.tradetracker.net/"]>img,
+		:root a[href^="https://adserver.adreactor.com/"],
+		:root [href^="http://join.shemalesfromhell.com/"],
+		:root [id^="ad_slider"],
+		:root #searchResultsList>div>div[onclick$="'inline.ad'});"],
+		:root [data-adbridg-ad-class],
+		:root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"],
+		:root [href^="http://join.shemale.xxx/"],
+		:root a[href^="https://ads.betfair.com/redirect.aspx?"],
+		:root [href^="http://www.fleshlightgirls.com/"],
+		:root [href^="http://join.trannies-fuck.com/"],
+		:root .trc_rbox .syndicatedItem,
+		:root a[href^="http://cam4com.go2cloud.org/aff_c?"],
+		:root a[href^="https://thefacux.com/"],
+		:root a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"],
+		:root [href^="http://join.rodneymoore.com/"],
+		:root [href^="https://shrugartisticelder.com"],
+		:root a[href^="https://staRTgamIng.net/tienda/"],
+		:root div[id^="lazyad-"],
+		:root a[href^="http://com-1.pro/"],
+		:root [name^="google_ads_iframe"],
+		:root [href="https://www.masstortfinancing.com/"]>img,
+		:root .ob_container .item-container-obpd,
+		:root [id^="div-gpt-ad"],
+		:root a[href^="https://www.geekbuying.com/dynamic-ads/"],
+		:root a[href^="https://lnkxt.bannerator.com/"],
+		:root [href="https://jdrucker.com/gold"]>img,
+		:root [href^="https://v.investologic.co.uk/"],
+		:root [href^="https://cipledecline.buzz/"],
+		:root a[href^="https://go.xxxjmp.com"],
+		:root #leader-companion>a[href],
+		:root [data-desktop-ad-id],
+		:root [href^="https://wct.link/"],
+		:root a[href^="https://jaxofuna.com/"],
+		:root div[recirculation-ad-container],
+		:root [href^="https://traffserve.com/"],
+		:root [data-type="ad-vertical"],
+		:root a[href^="https://u.expresstech.io/"],
+		:root [href^="https://mypillow.com/"]>img,
+		:root [href^="https://ad.admitad.com/"],
+		:root [data-testid="ad_testID"],
+		:root a[href^="https://track.ultravpn.com/"],
+		:root [href^="https://goldcometals.com/clk.trk"],
+		:root [data-ad-name],
+		:root a[href*=".g2afse.com/"],
+		:root a[href^="https://go.hpyjmp.com"],
+		:root [href^="https://mystore.com/"]>img,
+		:root [data-mobile-ad-id],
+		:root a[href^="http://tc.tradetracker.net/"]>img,
+		:root a[href^="http://affiliates.thrixxx.com/"],
+		:root div[id^="yandex_ad"],
+		:root a[href^="https://pb-imc.com/"],
+		:root a[href^="https://www.adultempire.com/"][href*="?partner_id="],
+		:root [data-template-type="nativead"],
+		:root [data-ez-name],
+		:root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"],
+		:root [data-dynamic-ads],
+		:root a[href^="http://go.xtbaffiliates.com/"],
+		:root a[href^="https://consali.com/"],
+		:root .grid>.container>#aside-promotion,
+		:root DFP-AD,
+		:root .trc_related_container div[data-item-syndicated="true"],
+		:root a[href^="https://www.liquidfire.mobi/"],
+		:root [href^="https://click2cvs.com/"],
+		:root [href^="//mage98rquewz.com/"],
+		:root a[href^="https://webroutetrk.com/"],
+		:root a[href^="https://mercurybest.com/"],
+		:root a[href^="https://startgAming.net/tienda/"],
+		:root [href^="https://safer-redirection.com"],
+		:root [onclick*="content.ad/"],
+		:root AMP-AD,
+		:root a[href^="https://sTartGAMiNG.net/tienda/"],
+		:root [data-ad-cls],
+		:root [id^="ad-wrap-"],
+		:root div[id^="taboola-stream-"],
+		:root [href^="https://go.astutelinks.com/"],
+		:root [class^="amp-ad-"],
+		:root [href^="https://affiliate.fastcomet.com/"]>img,
+		:root [class^="adDisplay-module"],
+		:root AD-SLOT,
+		:root .ob_dual_right>.ob_ads_header~.odb_div,
+		:root [href^="http://join.shemalepornstar.com/"],
+		:root a[href^="https://go.xlviiirdr.com"],
+		:root .trc_rbox_div .syndicatedItem,
+		:root div[data-adunit],
+		:root app-large-ad,
+		:root [href^="https://turtlebids.irauctions.com/"] img,
+		:root a[href^="https://www.adskeeper.com"],
+		:root [href^="https://totlnkcl.com/"],
+		:root [data-ad-module],
+		:root .plistaList>.itemLinkPET,
+		:root [href^="https://gmxvmvptfm.com/"],
+		:root [href^="https://trackfin.asia/"],
+		:root .plistaList>.plista_widget_underArticle_item[data-type="pet"],
+		:root a[href*="//lkstrck2.com/"],
+		:root a[href^="https://bs.serving-sys.com"],
+		:root [href^="http://residenceseeingstanding.com/"],
+		:root [class^="div-gpt-ad"],
+		:root a[href^="https://ggbetpromo.com/"],
+		:root a[href^="http://partners.etoro.com/"],
+		:root [data-advadstrackid],
+		:root a[href^="https://refpazkjixes.top/"],
+		:root #mgb-container>#mgb,
+		:root [href^="https://www.cloudways.com/en/?id"],
+		:root a[href^="https://tweakostensibleinstaller.com/"],
+		:root a[href^="https://go.xlivrdr.com"],
+		:root a[href^="https://cam4com.go2cloud.org/"],
+		:root a[href^="http://li.blogtrottr.com/click?"] {
+			display: none !important;
+		}
+	</style>
+</head>
+
+<body
+	class="home page-template page-template-elementor_header_footer page page-id-344 wp-embed-responsive mobile-menu-wrapper header-style-1 no-sidebar transparent-header elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-344 e--ua-blink e--ua-opera e--ua-webkit loaded"
+	data-elementor-device-mode="desktop">
+
+
+	<div id="wrapper" class="wrapper overflow-hidden">
+		<div data-elementor-type="wp-page" data-elementor-id="344" class="elementor elementor-344">
+			<section
+				class="elementor-section elementor-top-section elementor-element elementor-element-14b94f6 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+				data-id="14b94f6" data-element_type="section">
+				<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-777dc87"
+						data-id="777dc87" data-element_type="column">
+						<div class="elementor-widget-wrap elementor-element-populated">
+							<div class="elementor-element elementor-element-fdea73e elementor-widget elementor-widget-bithu-header"
+								data-id="fdea73e" data-element_type="widget" data-widget_type="bithu-header.default">
+								<div class="elementor-widget-container">
+
+
+									<!--=====================================-->
+									<!--=            Navbar Start           =-->
+									<!--=====================================-->
+									<header class="header header1 sticky-on">
+										<div id="navbar-wrap" class="navbar-wrap">
+											<div class="header-menu">
+												<div class="header-width">
+													<div class="container">
+														<div class="inner-wrap">
+															<div class="header-items-wrapping">
+
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</header>
+									<!--=====================================-->
+									<!--=          Header Area End          =-->
+									<!--=====================================-->
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-c364fe1 elementor-widget elementor-widget-html"
+								data-id="c364fe1" data-element_type="widget" data-widget_type="html.default">
+								<div class="elementor-widget-container">
+									<canvas id="canvas" class="v4firefly_bg"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="elementor-section elementor-top-section elementor-element elementor-element-0799df8 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+				data-id="0799df8" data-element_type="section" id="home">
+				<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-258a5b1"
+						data-id="258a5b1" data-element_type="column">
+						<div class="elementor-widget-wrap elementor-element-populated">
+							<div class="elementor-element elementor-element-96a3a27 elementor-widget elementor-widget-spacer"
+								data-id="96a3a27" data-element_type="widget" data-widget_type="spacer.default">
+								<div class="elementor-widget-container">
+									<style>
+										/*! elementor - v3.16.0 - 09-10-2023 */
+										.elementor-column .elementor-spacer-inner {
+											height: var(--spacer-size)
+										}
+
+										.e-con {
+											--container-widget-width: 100%
+										}
+
+										.e-con-inner>.elementor-widget-spacer,
+										.e-con>.elementor-widget-spacer {
+											width: var(--container-widget-width, var(--spacer-size));
+											--align-self: var(--container-widget-align-self, initial);
+											--flex-shrink: 0
+										}
+
+										.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,
+										.e-con>.elementor-widget-spacer>.elementor-widget-container {
+											height: 100%;
+											width: 100%
+										}
+
+										.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,
+										.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer {
+											height: 100%
+										}
+
+										.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,
+										.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner {
+											height: var(--container-widget-height, var(--spacer-size))
+										}
+
+										.e-con-inner>.elementor-widget-spacer.elementor-widget-empty,
+										.e-con>.elementor-widget-spacer.elementor-widget-empty {
+											position: relative;
+											min-height: 22px;
+											min-width: 22px
+										}
+
+										.e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,
+										.e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon {
+											position: absolute;
+											top: 0;
+											bottom: 0;
+											left: 0;
+											right: 0;
+											margin: auto;
+											padding: 0;
+											width: 22px;
+											height: 22px
+										}
+									</style>
+									<div class="elementor-spacer">
+										<div class="elementor-spacer-inner"></div>
+									</div>
+								</div>
+							</div>
+
+							<section
+								class="elementor-section elementor-inner-section elementor-element elementor-element-94f4d2f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="94f4d2f" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3444f07"
+										data-id="3444f07" data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-ee1f2bf elementor-widget elementor-widget-text-editor"
+												data-id="ee1f2bf" data-element_type="widget"
+												data-widget_type="text-editor.default">
+												<div class="elementor-widget-container">
+													<style>
+														/*! elementor - v3.16.0 - 09-10-2023 */
+														.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+															background-color: #69727d;
+															color: #fff
+														}
+
+														.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+															color: #69727d;
+															border: 3px solid;
+															background-color: transparent
+														}
+
+														.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+															margin-top: 8px
+														}
+
+														.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+															width: 1em;
+															height: 1em
+														}
+
+														.elementor-widget-text-editor .elementor-drop-cap {
+															float: left;
+															text-align: center;
+															line-height: 1;
+															font-size: 50px
+														}
+
+														.elementor-widget-text-editor .elementor-drop-cap-letter {
+															display: inline-block
+														}
+													</style>
+													<p>CREEP CREW MINT IS NOW LIVE!
+													</p>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-6d103e7 elementor-widget elementor-widget-bithu-banner4"
+												data-id="6d103e7" data-element_type="widget"
+												data-widget_type="bithu-banner4.default">
+												<div class="elementor-widget-container">
+													<div class="banner_section_v1 banner_section_v4">
+														<!-- <canvas id="canvas" class="v4firefly_bg"></canvas> -->
+														<ul>
+															<li>SUPPLY: 777 NFTS</li>
+															<li>Allowlist Mint: 2 FREE, THEN 0.005 ETH </li>
+															<li>Public Mint: 1 FREE, THEN 0.01 ETH</li>
+															<li>WALLET ALLOWANCE: MAX 3 ALLOWLIST &amp; PUBLIC</li>
+															<li>MINT DATE: Monday, OCTOBER 16, 2023 | 20:00 (UTC)</li>
+														</ul>
+														<div class="bithu_v4_banner_buttons">
+															<div class="join_comunity_btns list-btn">
+																<a id="connect_button" target="_blank"
+																	class="site_btn colorPrimaryBg">Connect Wallet<span
+																		class="hover_overlay"></span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2aeab31"
+										data-id="2aeab31" data-element_type="column"
+										data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-6b5b69e elementor-widget elementor-widget-image"
+												data-id="6b5b69e" data-element_type="widget"
+												data-widget_type="image.default">
+												<div class="elementor-widget-container">
+													<style>
+														/*! elementor - v3.16.0 - 09-10-2023 */
+														.elementor-widget-image {
+															text-align: center
+														}
+
+														.elementor-widget-image a {
+															display: inline-block
+														}
+
+														.elementor-widget-image a img[src$=".svg"] {
+															width: 48px
+														}
+
+														.elementor-widget-image img {
+															vertical-align: middle;
+															display: inline-block
+														}
+													</style> <img decoding="async" fetchpriority="high" width="2000"
+														height="2000" src="F3LlZqAWsAIEPSt.jpeg"
+														class="attachment-full size-full wp-image-4168" alt=""
+														srcset="cxx8Gti__400x400-removebg-preview.png"
+														sizes="(max-width: 2000px) 100vw, 2000px">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+
+		</div>
+
+
+		<!--=====================================-->
+		<!--=     Footer Section Area Start     =-->
+		<!--=====================================-->
+		<footer class="footer-wrap-layout2">
+
+		</footer>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<span id="elementor-device-mode" class="elementor-screen-only"></span>
+
+
+
+</body>
+
+</html><!-- Page cached by LiteSpeed Cache 5.7 on 2023-10-15 21:20:07 -->
